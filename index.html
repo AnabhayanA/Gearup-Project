@@ -16,12 +16,13 @@
           <a href="#services">Services</a>
           <a href="#contact">Contact</a>
         </nav>
+        <button class="theme-btn" id="theme-btn" aria-label="Toggle theme">🌙</button>
         <button class="menu-btn" id="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
       </div>
     </header>
 
     <main>
-      <section class="hero" id="home">
+      <section class="hero reveal" id="home">
         <div class="container hero-content">
           <h1>Build your next step with confidence.</h1>
           <p>
@@ -32,7 +33,7 @@
         </div>
       </section>
 
-      <section class="section" id="about">
+      <section class="section reveal" id="about">
         <div class="container">
           <h2>About</h2>
           <p>
@@ -42,19 +43,19 @@
         </div>
       </section>
 
-      <section class="section alt" id="services">
+      <section class="section alt reveal" id="services">
         <div class="container">
           <h2>Services</h2>
           <div class="cards">
-            <article class="card">
+            <article class="card reveal">
               <h3>Design</h3>
               <p>Clean layouts focused on readability and conversion.</p>
             </article>
-            <article class="card">
+            <article class="card reveal">
               <h3>Development</h3>
               <p>Responsive frontend implementation for all devices.</p>
             </article>
-            <article class="card">
+            <article class="card reveal">
               <h3>Support</h3>
               <p>Easy customization and updates as your project grows.</p>
             </article>
@@ -62,7 +63,7 @@
         </div>
       </section>
 
-      <section class="section" id="contact">
+      <section class="section reveal" id="contact">
         <div class="container">
           <h2>Contact</h2>
           <form class="contact-form" id="contact-form">
@@ -76,8 +77,9 @@
             </label>
             <label>
               Message
-              <textarea name="message" rows="5" required></textarea>
+              <textarea id="message-input" name="message" rows="5" maxlength="300" required></textarea>
             </label>
+            <p class="char-count" id="char-count">0 / 300</p>
             <button type="submit" class="btn">Send Message</button>
             <p class="form-message" id="form-message" aria-live="polite"></p>
           </form>
@@ -90,6 +92,8 @@
         <p>© 2026 GearUp. All rights reserved.</p>
       </div>
     </footer>
+
+    <button class="to-top" id="to-top" aria-label="Back to top">↑</button>
 
     <script src="script.js"></script>
   </body>
