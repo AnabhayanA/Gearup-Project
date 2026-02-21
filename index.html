@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GearUp</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#" class="logo">GearUp</a>
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="menu-btn" id="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-content">
+          <h1>Build your next step with confidence.</h1>
+          <p>
+            A clean, modern starter website for your project, business, or personal brand.
+            Fast, responsive, and easy to customize.
+          </p>
+          <a class="btn" href="#contact">Get Started</a>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <h2>About</h2>
+          <p>
+            GearUp helps you present what you do in a simple and professional way.
+            This starter includes a hero section, service cards, and a contact form.
+          </p>
+        </div>
+      </section>
+
+      <section class="section alt" id="services">
+        <div class="container">
+          <h2>Services</h2>
+          <div class="cards">
+            <article class="card">
+              <h3>Design</h3>
+              <p>Clean layouts focused on readability and conversion.</p>
+            </article>
+            <article class="card">
+              <h3>Development</h3>
+              <p>Responsive frontend implementation for all devices.</p>
+            </article>
+            <article class="card">
+              <h3>Support</h3>
+              <p>Easy customization and updates as your project grows.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <form class="contact-form" id="contact-form">
+            <label>
+              Name
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <button type="submit" class="btn">Send Message</button>
+            <p class="form-message" id="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 GearUp. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
