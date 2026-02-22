@@ -46,10 +46,6 @@ gearup-website-project/
 │   ├── index.html
 │   ├── styles.css
 │   └── script.js
-├── anabhayan-ahruran/
-│   ├── index.html
-│   ├── styles.css
-│   └── script.js
 └── AnabhayanAhruran/
 	├── index.html
 	├── styles.css
