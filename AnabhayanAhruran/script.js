@@ -15,6 +15,8 @@ const widgetHintButton = document.getElementById("widget-hint");
 const widgetUnlockButton = document.getElementById("widget-unlock");
 const widgetEncounterButton = document.getElementById("widget-encounter");
 const widgetLegendButton = document.getElementById("widget-legend");
+const ideaButton = document.getElementById("idea-btn");
+const ideaOutput = document.getElementById("idea-output");
 
 let badgeClicks = 0;
 
@@ -26,6 +28,15 @@ const hints = [
 ];
 
 const encounters = ["Pikachu", "Charmander", "Squirtle", "Bulbasaur", "Eevee", "Lucario"];
+
+const projectIdeas = [
+  "Build a personal theme switcher with custom colors and icons.",
+  "Add a quote-of-the-day button using JavaScript arrays.",
+  "Create a progress meter that fills as users complete goals.",
+  "Design a mini Pokémon card gallery with next/previous controls.",
+  "Make a secret keyboard code that reveals a hidden section.",
+  "Add hover animations to skill cards for a modern portfolio feel."
+];
 
 let hintIndex = 0;
 let keyBuffer = "";
@@ -101,6 +112,11 @@ widgetEncounterButton?.addEventListener("click", () => {
 
 widgetLegendButton?.addEventListener("click", () => {
   toggleLegendaryMode();
+});
+
+ideaButton?.addEventListener("click", () => {
+  const randomIndex = Math.floor(Math.random() * projectIdeas.length);
+  ideaOutput.textContent = `Challenge: ${projectIdeas[randomIndex]}`;
 });
 
 window.addEventListener("keydown", (event) => {

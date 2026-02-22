@@ -51,6 +51,31 @@ section h2 {
   margin-top: 0;
 }
 
+.idea-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+  margin: 0.75rem 0 0.9rem;
+}
+
+.idea-card {
+  background: #fff7ed;
+  border: 2px dashed #fb923c;
+  border-radius: 12px;
+  padding: 0.7rem;
+}
+
+.idea-card h3 {
+  margin: 0 0 0.35rem;
+  color: #9a3412;
+}
+
+#idea-output {
+  min-height: 1.2rem;
+  font-weight: 700;
+  color: #1e3a8a;
+}
+
 button {
   border: 0;
   border-radius: 10px;
@@ -180,6 +205,16 @@ body.legendary-mode section {
   border-color: #60a5fa;
 }
 
+body.legendary-mode .idea-card {
+  background: #0f172a;
+  border-color: #60a5fa;
+}
+
+body.legendary-mode .idea-card h3,
+body.legendary-mode #idea-output {
+  color: #93c5fd;
+}
+
 body.legendary-mode a,
 body.legendary-mode .badge-text,
 body.legendary-mode .theme-note {
@@ -191,6 +226,10 @@ body.legendary-mode .trainer-widget {
 }
 
 @media (max-width: 620px) {
+  .idea-grid {
+    grid-template-columns: 1fr;
+  }
+
   .trainer-widget {
     left: 10px;
     bottom: 74px;
