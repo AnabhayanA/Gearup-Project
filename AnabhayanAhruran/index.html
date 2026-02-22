@@ -11,6 +11,7 @@
     <header>
       <h1>Anabhayan Ahruran - Project Lead Website</h1>
       <p>I helped organize the project structure and student website showcase.</p>
+      <p class="theme-note">Pokémon Theme Demo: colorful, interactive, and full of hidden secrets.</p>
       <a href="../index.html">← Back to Main Project Hub</a>
     </header>
 
@@ -45,15 +46,42 @@
 
       <!-- Interactive feature -->
       <section>
-        <h2>Interactive Feature: Progress Tracker</h2>
-        <p>Track project completion by clicking the button below.</p>
-        <button id="progress-btn">Increase Progress</button>
+        <h2>Interactive Feature: Pokédex Progress Tracker</h2>
+        <p>Train up your progress to complete the project challenge.</p>
+        <button id="progress-btn">Train +20 XP</button>
         <p id="progress-text">Project Progress: 0%</p>
         <div class="progress-bar">
           <div id="progress-fill"></div>
         </div>
+        <p id="badge-text" class="badge-text" aria-live="polite"></p>
+      </section>
+
+      <section>
+        <h2>Hidden Interactive Zone</h2>
+        <p>Try discovering hidden actions around this page 👀</p>
+        <button id="hint-btn">Show Hint</button>
+        <p id="hint-output"></p>
       </section>
     </main>
+
+    <div class="pokeball-badge" id="pokeball-badge" title="Secret trigger"></div>
+
+    <aside class="secret-panel" id="secret-panel" aria-hidden="true">
+      <h3>Secret Pokédex Unlocked</h3>
+      <p id="secret-message">A hidden trainer interaction has been activated.</p>
+      <button id="encounter-btn">Find Wild Pokémon</button>
+      <p id="encounter-output">No encounter yet.</p>
+    </aside>
+
+    <aside class="trainer-widget" aria-label="Trainer controls">
+      <h3>Trainer Widget</h3>
+      <div class="widget-actions">
+        <button id="widget-hint">Hint</button>
+        <button id="widget-unlock">Unlock</button>
+        <button id="widget-encounter">Encounter</button>
+        <button id="widget-legend">Legend Mode</button>
+      </div>
+    </aside>
 
     <script src="script.js"></script>
   </body>
